@@ -1,0 +1,6 @@
+data/*.xlsx
+data/*.xlsm
+data/*.xls
+*.tmp
+*.bak
+*.log
