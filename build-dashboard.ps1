@@ -276,10 +276,10 @@ try {
       }
     }
 
-    $totalSqft = 0.0
-    foreach ($sqft in @($mainSqft, $secondSqft, $thirdSqft)) {
-      if ($null -ne $sqft) { $totalSqft += $sqft }
-    }
+   $totalSqft = 0.0
+foreach ($sqft in @($mainSqft, $secondSqft, $thirdSqft)) {
+  if ($null -ne $sqft) { $totalSqft += $sqft }
+}
 
     $plans += [ordered]@{
       id = Get-PlanId $name $col
