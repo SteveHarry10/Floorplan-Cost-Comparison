@@ -44,7 +44,7 @@ jobs:
       - name: Rebuild dashboard data from Floorplans sheet
         shell: pwsh
         run: |
-          powershell -NoProfile -ExecutionPolicy Bypass -File ".\build-dashboard.ps1" -WorkbookPath ".\data\Floorplans Costs.xlsx" -OutputPath ".\index.html" -SheetName "Floorplans" -PlanNameRow 5 -DataOutputPath ".\data\floorplans-data.json" -ExternalDataPath "data/floorplans-data.json"
+          powershell -NoProfile -ExecutionPolicy Bypass -File ".\build-dashboard.ps1" -WorkbookPath ".\data\Floorplans Costs.xlsx" -OutputPath ".\index.html" -SheetName "Floorplans" -PlanNameRow 5 -MainSqftRow 7 -SecondSqftRow 8 -ThirdSqftRow 9 -BasementSqftRow 10 -DataOutputPath ".\data\floorplans-data.json" -ExternalDataPath "data/floorplans-data.json"
 
       - name: Commit refreshed dashboard
         shell: pwsh
